@@ -1,25 +1,56 @@
 .app {
-  height: 100vh;
-  width: 100vw;
-  transition: background-color 1s ease-in;
+    width: auto;
+    min-height: 100vh;
+    background-color: #9CCEF3;
 }
-
-.app__header,
-.app__main {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  font-family: "Raleway", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+#city-search {
+    margin: 20px;
+    background: none;
+    outline: none ;
+    font-family: "Raleway";
+    font-size: larger;
+    border: none;
+    color: white;
+    
 }
-
+#city-search:focus {
+    border-bottom: 1px solid #161D64;
+}
+.findb {
+    width: 200px;
+    height: 40px;
+    background-color: #5879C6;
+    color: #161D64;
+    border: none;
+    font-family: "Raleway";
+    font-size: larger;
+}
+.Navbar{
+    background-color: #749EDA;
+    padding: 20px;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 26px;
+    font-family: "Raleway";
+}
+.hero-image{
+ 
+    
+}
+.hourly-weather {
+    display: flex;
+   justify-content: space-around;
+}
+.hourly-weather article {
+    display: flex;
+    flex-direction: column;
+    justify-content: ;
+}
 /*  Search bar */
 
 /* Current weather */
 
-div {
-  border: 5px solid red;
-}
+
