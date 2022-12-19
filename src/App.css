@@ -43,6 +43,7 @@
 .hourly-weather {
     display: flex;
    justify-content: space-around;
+   font-family: "Raleway";
 }
 .hourly-weather article {
     display: flex;
