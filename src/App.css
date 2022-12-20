@@ -5,6 +5,7 @@
     margin: 0 auto;
     min-height: 110vh;
     background-color: #9CCEF3;
+    
 }
 #city-search {
     margin: 20px;
@@ -51,7 +52,7 @@
 }
 .Navbar{
     background-color: #749EDA;
-    padding: 20px;
+    padding: 0.5%;
 }
 .hero{
     display: flex;
@@ -60,12 +61,14 @@
     font-size: 26px;
     font-family: "Raleway";
     margin-bottom: 4%;
+    margin-top: -2%;
+
 }
 .hourly-weather {
     display: flex;
    justify-content: space-around;
    font-family: "Raleway";
-   margin: 0 10%;
+   margin: -4% 19%;
 }
 .hourly-weather article {
     display: flex;
@@ -104,5 +107,33 @@ figcaption,.main-text {
 /*  Search bar */
 
 /* Current weather */
+body{
+  overflow: hidden;
+}
+@media only screen and (max-width: 600px){
 
+  .hourly-weather {
+     
+    display: flex;
+    border-bottom: 1px solid rgb(9, 9, 9);
+    margin: auto 0;
+    padding-bottom: -31px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /* align-content: center; */
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  body {
+    overflow: scroll;
+    background-color: #9CCEF3;
+  }
+
+  .space {
+    margin-bottom: 40%;
+}
+
+  
+}
 

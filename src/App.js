@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import mostlycloudy from "./img/weather-icons/mostlycloudy.svg";
 import clear from "./img/weather-icons/clear.svg";
+import FakeWeather from "./data/FakeWeather.json";
 
 
 import Search from "./components/Search";
@@ -22,6 +23,7 @@ class App extends Component {
   };
 
   render() {
+    console.log(FakeWeather)
     return (
       <div className="app">
         <Search />
