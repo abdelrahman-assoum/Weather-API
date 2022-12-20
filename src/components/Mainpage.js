@@ -22,18 +22,18 @@ class Mainpage extends React.Component {
                 <b>Temperature</b>
                 <span className="temperatue1 ">
                   {' '}
-                  &nbsp;&nbsp;&nbsp;10&deg; to 11&deg; C{' '}
+                  &nbsp;&nbsp;&nbsp;{this.props.temp_min}&deg; to {this.props.temp_max}&deg; C{' '}
                 </span>
               </p>
             </div>
             <p className="pourcentage-1">
               <b>Humidity</b>
               <span className="pourcentage-1">
-                &nbsp;&nbsp;78%&nbsp;&nbsp;
+                &nbsp;&nbsp;{this.props.humidity}&nbsp;&nbsp;
               </span>{' '}
               <b>Pressure</b>
               <span className="pourcentage-2">
-                &nbsp;&nbsp;1008.48&nbsp;&nbsp;
+                &nbsp;&nbsp;{this.props.pressure}&nbsp;&nbsp;
               </span>
             </p>
           </div>

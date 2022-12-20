@@ -14,45 +14,45 @@ class daily_weather extends React.Component {
         return (
             <div className="hourly-weather">
           <article>
-              <time>03:00</time>
+              <time>{this.props.time03}</time>
               <img src={mostlycloudy} />
-              <span className="space">8&deg;C</span>
+              <span className="space">{this.props.temp03}&deg;C</span>
           </article>
 
           <article>
-              <time>06:00</time>
+              <time>{this.props.time06}</time>
               <img src={mostlycloudy} />
-              <span className="space">9&deg;C</span>
+              <span className="space">{this.props.temp06}&deg;C</span>
           </article>
 
           <article>
-              <time>09:00</time>
+              <time>{this.props.time09}</time>
               <img src={clear} />
-              <span className="space">14&deg;C</span>
+              <span className="space">{this.props.temp09}&deg;C</span>
           </article>
 
           <article>
-              <time>12:00</time>
+              <time>{this.props.time12}</time>
               <img src={clear}  />
-              <span className="space">17&deg;C</span>
+              <span className="space">{this.props.temp12}&deg;C</span>
           </article>
 
           <article>
-              <time>15:00</time>
+              <time>{this.props.time15}</time>
               <img src={clear}  />
-              <span className="space">16&deg;C</span>
+              <span className="space">{this.props.temp15}&deg;C</span>
           </article>
 
           <article>
-              <time>21:00</time>
+              <time>{this.props.time18}</time>
               <img src={clear} />
-              <span className="space">8&deg;C</span>
+              <span className="space">{this.props.temp18}&deg;C</span>
           </article>
 
           <article>
-              <time>03:00</time>
+              <time>{this.props.time21}</time>
               <img src={mostlycloudy}/>
-              <span className="space" >13&deg;C</span>
+              <span className="space" >{this.props.temp21}&deg;C</span>
           </article>
         </div>
             );
