@@ -11,7 +11,7 @@ class Mainpage extends React.Component {
       <div>
       <main className="hero">
         <figure>
-          <img src={this.props.imageSrc(this.props.weather[0].main.toLowerCase())} className="hero-image" />
+          <img src={this.props.imageSrc(this.props.weather[0].id)} className="hero-image" />
           <figcaption>
             <b>overcast clouds</b>
           </figcaption>
@@ -30,10 +30,10 @@ class Mainpage extends React.Component {
             <p className="pourcentage-1">
               <b>Humidity</b>
               <span className="pourcentage-1">
-                &nbsp;&nbsp;{this.props.humidity}&nbsp;&nbsp;
+                &nbsp;&nbsp;{this.props.humidity}%
               </span>{' '}
               <b>Pressure</b>
-              <span className="pourcentage-2">
+              <span className="pourcentage-1">
                 &nbsp;&nbsp;{this.props.pressure}&nbsp;&nbsp;
               </span>
             </p>

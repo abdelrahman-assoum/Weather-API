@@ -63,26 +63,35 @@ class App extends Component {
     console.log(this.state.data)
 
     const imageSrc = (image) => {
-      switch (image) {
-        case "clouds":
-          return cloudy;
-        case "mostlycloudy":
-          return mostlycloudy;
-        case "partlycloudy":
-          return partlycloudy;
-        case "snow":
-          return snow;
-        case "storm":
-          return storm;
-        case "rain":
-          return rain;
-        case "fog":
-          return fog;
-        case "drizzle":
-          return drizzle;
-        case "clear":
-          return clear
-      }
+      // switch (image) {
+      //   case "clouds":
+      //     return cloudy;
+      //   case "mostlycloudy":
+      //     return mostlycloudy;
+      //   case "partlycloudy":
+      //     return partlycloudy;
+      //   case "snow":
+      //     return snow;
+      //   case "storm":
+      //     return storm;
+      //   case "rain":
+      //     return rain;
+      //   case "fog":
+      //     return fog;
+      //   case "drizzle":
+      //     return drizzle;
+      //   case "clear":
+      //     return clear
+      // }
+      if (image<300) return storm;
+      else if (image>=300 && image<=499) return drizzle;
+      else if (image>499 && image<=599) return rain;
+      else if (image>599 && image<=699) return snow;
+      else if (image>699 && image<=799) return fog;
+      else if (image=800) return clear;
+      else if (image=801) return partlycloudy;
+      else if (image>801 && image<=805) return mostlycloudy;
+       
     };
     return (
       <div className="app">
@@ -97,22 +106,14 @@ class App extends Component {
         />}
         {this.state.isFetched && <Daily
           // temparature
-          temp03={(this.state.data[1].main.temp ).toFixed(
-            0,
-          )}
-          temp06={(this.state.data[2].main.temp ).toFixed(
-            0,
-          )}
-          temp09={(this.state.data[3].main.temp ).toFixed(
-            0,
-          )}
-          temp12={(this.state.data[4].main.temp )}
-          temp15={this.state.data[5].main.temp }
-          temp18={this.state.data[6].main.temp }
-          temp21={this.state.data[7].main.temp}
-          temp032={(this.state.data[0].main.temp - 273.15).toFixed(
-            0,
-          )}
+          temp03={(this.state.data[1].main.temp ).toFixed(0)}
+          temp06={(this.state.data[2].main.temp ).toFixed(0)}
+          temp09={(this.state.data[3].main.temp ).toFixed(0)}
+          temp12={(this.state.data[4].main.temp ).toFixed(0)}
+          temp15={(this.state.data[5].main.temp ).toFixed(0)}
+          temp18={(this.state.data[6].main.temp ).toFixed(0)}
+          temp21={(this.state.data[7].main.temp).toFixed(0)}
+          temp032={(this.state.data[0].main.temp).toFixed(0)}
 
 
           path={this.state.data}
