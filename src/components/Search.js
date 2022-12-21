@@ -10,10 +10,12 @@ class Search extends React.Component {
   render() {
     return (
       <nav className="Navbar">
-          <input type="text" id="city-search" placeholder="Type in a city name" />
-          <button className="findb">Find Weather</button>
+          <input onChange={e => this.setState({input: e.target.value})}type="text" id="city-search" placeholder="Type in a city name" />
+          <button onClick={(e) => this.props.method(this.state.input)} className="findb">Find Weather</button>
         </nav>
     );
+
+
   }
 }
 export default Search;

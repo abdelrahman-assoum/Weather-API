@@ -5,12 +5,13 @@ class Mainpage extends React.Component {
     input: '',
   }
 
+  
   render() {
     return (
       <div>
       <main className="hero">
         <figure>
-          <img src={mostlycloudy} className="hero-image" />
+          <img src={this.props.imageSrc(this.props.weather[0].main.toLowerCase())} className="hero-image" />
           <figcaption>
             <b>overcast clouds</b>
           </figcaption>
